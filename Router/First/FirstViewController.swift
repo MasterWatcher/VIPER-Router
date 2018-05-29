@@ -8,8 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
+    @IBAction func goTo2(_ sender: Any) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "secondViewController")
+        present(vc, animated: true) {
+            let mi = vc.moduleInput as! SecondModuleInput!
+            mi?.configure(value: "Hello from 1")
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
