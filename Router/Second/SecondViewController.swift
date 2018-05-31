@@ -10,9 +10,9 @@ import UIKit
 
 class SecondViewController: UIViewController, SecondViewInput {
     
+    @IBOutlet var outputLabel: UILabel!
+
     var output: SecondViewOutput!
-    
-    var a: SecondModuleInput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,10 @@ class SecondViewController: UIViewController, SecondViewInput {
     }
     
     func show(value: String) {
-        
+        outputLabel.text = value
+    }
+    @IBAction func close(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 
 }

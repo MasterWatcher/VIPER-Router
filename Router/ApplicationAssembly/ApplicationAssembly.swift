@@ -14,6 +14,7 @@ final class ApplicationAssembly {
     //Use default dependency
     class var assembler: Assembler {
         return Assembler([
+         //   RouterAssembly(),
             FisrtModuleAssembly(),
             SecondModuleAssembly()
             ])
@@ -31,6 +32,7 @@ final class ApplicationAssembly {
 extension SwinjectStoryboard {
     
     @objc class func setup() {
+        Container.loggingFunction = nil
         defaultContainer = ApplicationAssembly.assembler.resolver as! Container
     }
     

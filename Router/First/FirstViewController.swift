@@ -10,26 +10,21 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    @IBAction func goTo2(_ sender: Any) {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "secondViewController")
-        present(vc, animated: true) {
-            let mi = vc.moduleInput as! SecondModuleInput!
-            mi?.configure(value: "Hello from 1")
-        }
-    }
-    
-    
+    @IBOutlet var inputTextField: UITextField!
+
+    var router: Router!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        router = RouterImpl(vc: self)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func push(_ sender: Any) {
+        router.transition(to: SecondScenePush(with: inputTextField.text!))
     }
 
-
+    @IBAction func modal(_ sender: Any) {
+        router.transition(to: SecondSceneModal(with: inputTextField.text!))
+    }
 }
 

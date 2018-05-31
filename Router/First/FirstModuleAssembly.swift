@@ -15,7 +15,7 @@ final class FisrtModuleAssembly: Assembly {
     func assemble(container: Container) {
        
         container.storyboardInitCompleted(FirstViewController.self) { r, viewController in
-            
+           //   viewController.router = r.resolve(Router.self)
         }
     }
     

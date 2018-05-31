@@ -8,15 +8,21 @@
 
 import Foundation
 
-class SecondPresenter: SecondModuleInput, SecondViewOutput {
+class SecondPresenter: SecondViewOutput {
     
     weak var view: SecondViewInput!
-    
-    func configure(value: String) {
-        
-    }
-    
+
+    var value: String!
+
     func viewIsReady() {
-        
+        view.show(value: value)
     }
+}
+
+extension SecondPresenter: ModuleInput {
+    func configure(with value: String) {
+        print(value)
+        self.value = value
+    }
+
 }

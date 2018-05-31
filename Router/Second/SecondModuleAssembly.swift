@@ -11,7 +11,6 @@ import SwinjectStoryboard
 
 final class SecondModuleAssembly: Assembly {
     
-    //Module assembly
     func assemble(container: Container) {
         
         

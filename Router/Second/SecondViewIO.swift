@@ -8,10 +8,10 @@
 
 import Foundation
 
-protocol SecondViewInput: ViewInput {
+protocol SecondViewInput: class  {
     func show(value: String)
 }
 
-protocol SecondViewOutput {
+    protocol SecondViewOutput: class  {
     func viewIsReady()
 }

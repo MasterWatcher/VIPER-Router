@@ -8,7 +8,7 @@ DEPENDENCIES:
   - SwinjectStoryboard
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Swinject
     - SwinjectStoryboard
 
@@ -18,4 +18,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ebc5571d2d27427f39296746322e2927fcfa7376
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.0

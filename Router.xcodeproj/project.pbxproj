@@ -10,7 +10,6 @@
 		3A37000020B9BC2D0076128E /* FirstModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FFFF20B9BC2D0076128E /* FirstModuleAssembly.swift */; };
 		3A37000220B9BC3A0076128E /* SecondModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37000120B9BC3A0076128E /* SecondModuleAssembly.swift */; };
 		3A37000420B9BEDE0076128E /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37000320B9BEDE0076128E /* SecondPresenter.swift */; };
-		3A37000920B9BF460076128E /* SecondModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37000820B9BF460076128E /* SecondModuleInput.swift */; };
 		3A37000B20B9BFBB0076128E /* SecondViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37000A20B9BFBB0076128E /* SecondViewIO.swift */; };
 		3A37000E20B9C1630076128E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37000D20B9C1630076128E /* UIViewController+Extension.swift */; };
 		3A37001020B9D29D0076128E /* ViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37000F20B9D29D0076128E /* ViewInput.swift */; };
@@ -21,10 +20,15 @@
 		3A37FFD520B9B5340076128E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A37FFD320B9B5340076128E /* LaunchScreen.storyboard */; };
 		3A37FFE020B9B5340076128E /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FFDF20B9B5340076128E /* RouterTests.swift */; };
 		3A37FFEB20B9B5340076128E /* RouterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FFEA20B9B5340076128E /* RouterUITests.swift */; };
-		3A37FFF920B9BA4D0076128E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FFF820B9BA4D0076128E /* SecondViewController.swift */; };
 		3A37FFFB20B9BAD70076128E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FFFA20B9BAD70076128E /* Router.swift */; };
 		3A37FFFE20B9BBE90076128E /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FFFD20B9BBE90076128E /* ApplicationAssembly.swift */; };
 		85E0F96988F0341758E1AF1E /* Pods_Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC6C8154A868A24E61280DE /* Pods_Router.framework */; };
+		A316AD6C20C00DAF00BE862C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FFF820B9BA4D0076128E /* SecondViewController.swift */; };
+		A316AD7020C014A900BE862C /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316AD6E20C014A900BE862C /* Scene.swift */; };
+		A316AD7120C014A900BE862C /* SecondScenePush.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316AD6F20C014A900BE862C /* SecondScenePush.swift */; };
+		A316AD7320C0154400BE862C /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316AD7220C0154400BE862C /* ModuleInput.swift */; };
+		A316AD7620C01A9800BE862C /* RouterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316AD7520C01A9800BE862C /* RouterAssembly.swift */; };
+		A316AD7820C0252F00BE862C /* SecondSceneModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316AD7720C0252F00BE862C /* SecondSceneModal.swift */; };
 		ED1CEF421D26E0640F779642 /* Pods_RouterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4FAA80202EF4144873F5F1 /* Pods_RouterUITests.framework */; };
 		F65EA09022AEF03409BD0D73 /* Pods_RouterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5496829DF30CD33218B8F70B /* Pods_RouterTests.framework */; };
 /* End PBXBuildFile section */
@@ -50,7 +54,6 @@
 		324313AD5622414D58D483AF /* Pods-Router.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Router.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Router/Pods-Router.debug.xcconfig"; sourceTree = "<group>"; };
 		3A37000120B9BC3A0076128E /* SecondModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModuleAssembly.swift; sourceTree = "<group>"; };
 		3A37000320B9BEDE0076128E /* SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
-		3A37000820B9BF460076128E /* SecondModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModuleInput.swift; sourceTree = "<group>"; };
 		3A37000A20B9BFBB0076128E /* SecondViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewIO.swift; sourceTree = "<group>"; };
 		3A37000D20B9C1630076128E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		3A37000F20B9D29D0076128E /* ViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInput.swift; sourceTree = "<group>"; };
@@ -77,6 +80,11 @@
 		5C7B39CC6C972DB65FBBC3CF /* Pods-Router.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Router.release.xcconfig"; path = "Pods/Target Support Files/Pods-Router/Pods-Router.release.xcconfig"; sourceTree = "<group>"; };
 		7247AE5C9B5B11F3284B3C6E /* Pods-RouterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouterUITests/Pods-RouterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8EDF0BEF23ED10E9B3D42FE2 /* Pods-RouterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouterTests/Pods-RouterTests.release.xcconfig"; sourceTree = "<group>"; };
+		A316AD6E20C014A900BE862C /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		A316AD6F20C014A900BE862C /* SecondScenePush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScenePush.swift; sourceTree = "<group>"; };
+		A316AD7220C0154400BE862C /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
+		A316AD7520C01A9800BE862C /* RouterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAssembly.swift; sourceTree = "<group>"; };
+		A316AD7720C0252F00BE862C /* SecondSceneModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneModal.swift; sourceTree = "<group>"; };
 		CC0FABD0DAEE31994AC1EA9D /* Pods-RouterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouterUITests/Pods-RouterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FEC6C8154A868A24E61280DE /* Pods_Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,7 +137,6 @@
 				3A37000A20B9BFBB0076128E /* SecondViewIO.swift */,
 				3A37000320B9BEDE0076128E /* SecondPresenter.swift */,
 				3A37000120B9BC3A0076128E /* SecondModuleAssembly.swift */,
-				3A37000820B9BF460076128E /* SecondModuleInput.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -146,8 +153,11 @@
 		3A37000C20B9C1050076128E /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				A316AD7420C01A7E00BE862C /* RouterAssembly */,
 				3A37FFFA20B9BAD70076128E /* Router.swift */,
+				A316AD7220C0154400BE862C /* ModuleInput.swift */,
 				3A37000D20B9C1630076128E /* UIViewController+Extension.swift */,
+				A316AD6D20C014A900BE862C /* Scene */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -225,6 +235,24 @@
 				3F4FAA80202EF4144873F5F1 /* Pods_RouterUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A316AD6D20C014A900BE862C /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A316AD6E20C014A900BE862C /* Scene.swift */,
+				A316AD6F20C014A900BE862C /* SecondScenePush.swift */,
+				A316AD7720C0252F00BE862C /* SecondSceneModal.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		A316AD7420C01A7E00BE862C /* RouterAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				A316AD7520C01A9800BE862C /* RouterAssembly.swift */,
+			);
+			path = RouterAssembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,16 +468,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A37000020B9BC2D0076128E /* FirstModuleAssembly.swift in Sources */,
+				A316AD7320C0154400BE862C /* ModuleInput.swift in Sources */,
 				3A37000E20B9C1630076128E /* UIViewController+Extension.swift in Sources */,
 				3A37FFFB20B9BAD70076128E /* Router.swift in Sources */,
 				3A37FFFE20B9BBE90076128E /* ApplicationAssembly.swift in Sources */,
-				3A37FFF920B9BA4D0076128E /* SecondViewController.swift in Sources */,
-				3A37000920B9BF460076128E /* SecondModuleInput.swift in Sources */,
+				A316AD7020C014A900BE862C /* Scene.swift in Sources */,
+				A316AD7120C014A900BE862C /* SecondScenePush.swift in Sources */,
 				3A37000420B9BEDE0076128E /* SecondPresenter.swift in Sources */,
+				A316AD7820C0252F00BE862C /* SecondSceneModal.swift in Sources */,
 				3A37FFCD20B9B5300076128E /* FirstViewController.swift in Sources */,
 				3A37000220B9BC3A0076128E /* SecondModuleAssembly.swift in Sources */,
+				A316AD6C20C00DAF00BE862C /* SecondViewController.swift in Sources */,
 				3A37001020B9D29D0076128E /* ViewInput.swift in Sources */,
 				3A37000B20B9BFBB0076128E /* SecondViewIO.swift in Sources */,
+				A316AD7620C01A9800BE862C /* RouterAssembly.swift in Sources */,
 				3A37FFCB20B9B5300076128E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

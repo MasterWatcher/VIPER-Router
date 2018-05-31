@@ -11,13 +11,12 @@
 		031F23B9FDAFF52989054017C3185682 /* ObjectScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1B09D78B73CC64FBF2632B422063F5 /* ObjectScope.swift */; };
 		0919060C0C8EF1E05495AE9268CDDCD8 /* SwinjectStoryboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AF6927D3351C23544927C9D1D6A45E /* SwinjectStoryboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		149DE2CBE73A3F6E520283403CFA34DE /* _Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14785D436E0AAAFECA90FFD8D6D00705 /* _Resolver.swift */; };
+		1E384413A9C40149058CDED859669729 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710A274A907B275EB2859F9AC93D57B7 /* Foundation.framework */; };
 		2A8FFD295FFCE70BFDBB80E44699F621 /* SwinjectStoryboardOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDFF6776B945C543EA0ED95F22329DD /* SwinjectStoryboardOption.swift */; };
 		2ACD2B3EA7A421E0064753D6F687B3BF /* SwinjectStoryboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FB3C1B6884EA85387FED3FB0BC918 /* SwinjectStoryboard-dummy.m */; };
 		305C547E75EA9E79B3BFB9C711CEA3AC /* UIStoryboard+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF5DBF6B720F7DE45E290F5AAE5D8D1 /* UIStoryboard+Swizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A657C12CC98C399FA3F754E5FA634A3 /* Container.Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6A3C7EE80D51F60BAA66528EA76BC /* Container.Logging.swift */; };
-		419CED76DB2F846CFFB8E55111D03678 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */; };
 		42911758412A845F9CB628C4FEE075A9 /* Container+SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204792D077D087FCBAFE1ACA83D686C9 /* Container+SwinjectStoryboard.swift */; };
-		54FFC25B181AC97E59D6E09B790B84C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */; };
 		568CBCBC4BE87DF653CE59E6354BD9AF /* InstanceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA16046E23467199589CEF9FDD7B8E7 /* InstanceStorage.swift */; };
 		59B267E787BF4C86728B7D3A4F1E8990 /* SynchronizedResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36D43A1386C76BB83710AB971C26C1B /* SynchronizedResolver.swift */; };
 		5CF189ABC998FB017E5886C375E766AD /* Pods-RouterUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F505ABD3BEBCE7AA0F99C68F116EA6 /* Pods-RouterUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +27,7 @@
 		7837F131DDCF001575A900F5E1598A52 /* _SwinjectStoryboardBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B54573EB1B34FDC940B418315153CF4E /* _SwinjectStoryboardBase.m */; };
 		79F80E772ECF7CB6E2EE620CE1CF0E08 /* UIStoryboard+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD71C5476E076C771CB02ECE37FE19 /* UIStoryboard+Swizzling.m */; };
 		7BA8B564AA5A8110BAC7504467199519 /* SynchronizedResolver.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21D2A19C5A8CAFD14C52CA7B0A82B1 /* SynchronizedResolver.Arguments.swift */; };
+		841D47E30C1DD42FAF56C9A294D7424B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710A274A907B275EB2859F9AC93D57B7 /* Foundation.framework */; };
 		84796411AAE79EB30E0F9F90C607FCAB /* Pods-RouterTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEC56262CBAA86094783AACAED79ACD /* Pods-RouterTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		862D8D20EE0F098A20493BAA7580D1D5 /* Pods-RouterUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1629C00E8BECFC41E099D2B7B8A02F /* Pods-RouterUITests-dummy.m */; };
 		8C880E4DC867D132B51DC21251FEB894 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46187CDE5959F889EF137BD0C85C438 /* Resolver.swift */; };
@@ -42,14 +42,14 @@
 		AA72C4A05E2554A89EA8DBCC74CF552D /* SwinjectStoryboardProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F2BD664F8E110CAD3D05B50966A623DC /* SwinjectStoryboardProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC671D9EC3D66AC643568194FA21A411 /* SwinjectStoryboard+SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB830D8C410B26B5083597CC3A90C1 /* SwinjectStoryboard+SetUp.m */; };
 		B4CC6D20527305E292BB74FFFD75BC2B /* ViewController+Swinject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A58C6AA29599C997F0C947CDF0216 /* ViewController+Swinject.swift */; };
+		B503A63E0009ED51E48A64D4012C463A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710A274A907B275EB2859F9AC93D57B7 /* Foundation.framework */; };
 		B7E943E0BE3563160FF4F380A4B53E49 /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C73D2E4800FFEA0C3BAA320FEE84EA /* UnavailableItems.swift */; };
 		BAFD6A8DBBBA175EA7BA13798BFF4749 /* SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5646F722BC39A7030B7A835933221F9 /* SwinjectStoryboard.swift */; };
-		BBAEBC9C1B7093FBC9AEC10C219324CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */; };
+		C2B4002E7151D35299B8968340BB4F7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710A274A907B275EB2859F9AC93D57B7 /* Foundation.framework */; };
 		C30B37D0F723A7113665FCD8C2B09BBA /* DebugHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96076E00D888907FD0F83B322B2F6EEA /* DebugHelper.swift */; };
-		C501C2263C3718C533D283617B10214D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */; };
 		CA0D7AF14E641EDC634D7B9BB7AFB3FC /* ServiceEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4F31E1CBA786519E458BC761A8395 /* ServiceEntry.swift */; };
+		D0F87D3880BF0DC1593D2AEED3B723B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710A274A907B275EB2859F9AC93D57B7 /* Foundation.framework */; };
 		D33A944E4782732EF34CA58681070629 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ED523E7903285E1F4AB03F21081E2C /* Container.swift */; };
-		E0017E6FEA6D898D7A687DD158B6DA7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */; };
 		E2424E7AA7FE2A9CB8E205E3D9D01D69 /* Pods-RouterTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A0FFBE35934A8B8ECFC52DC800665E /* Pods-RouterTests-dummy.m */; };
 		E372B688317AA8B1745E4893570B820F /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BE3C09BFDB3C180C1419A2B8AD189 /* Box.swift */; };
 		E7A07D9C28358C31FB8E8A680DA7BCBD /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AFF080885243503795F576D77F3CF /* Assembler.swift */; };
@@ -140,6 +140,7 @@
 		66C14E144B745D7597AC77E53E5B9F0A /* UnavailableItems.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnavailableItems.swift; path = Sources/UnavailableItems.swift; sourceTree = "<group>"; };
 		6C2C42CE718F9A6BC60AE2F175A685D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F4FB3C1B6884EA85387FED3FB0BC918 /* SwinjectStoryboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwinjectStoryboard-dummy.m"; sourceTree = "<group>"; };
+		710A274A907B275EB2859F9AC93D57B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7FF5DBF6B720F7DE45E290F5AAE5D8D1 /* UIStoryboard+Swizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStoryboard+Swizzling.h"; path = "Sources/iOS-tvOS/UIStoryboard+Swizzling.h"; sourceTree = "<group>"; };
 		85A0FFBE35934A8B8ECFC52DC800665E /* Pods-RouterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RouterTests-dummy.m"; sourceTree = "<group>"; };
 		85ED523E7903285E1F4AB03F21081E2C /* Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.swift; path = Sources/Container.swift; sourceTree = "<group>"; };
@@ -180,7 +181,6 @@
 		F4804DBB77E877A6BCEA1108334F2E4D /* Pods-RouterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RouterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5646F722BC39A7030B7A835933221F9 /* SwinjectStoryboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwinjectStoryboard.swift; path = Sources/SwinjectStoryboard.swift; sourceTree = "<group>"; };
 		F5B23B603DC9EF631CFF6EBBF13C1D65 /* Pods-Router-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Router-acknowledgements.plist"; sourceTree = "<group>"; };
-		FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FB1B09D78B73CC64FBF2632B422063F5 /* ObjectScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.swift; path = Sources/ObjectScope.swift; sourceTree = "<group>"; };
 		FE11F33D4610AC6839FEE19020A6D19B /* Swinject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Swinject.h; path = Sources/Swinject.h; sourceTree = "<group>"; };
 		FF1D3629AD25141FEC78A4A87D3631AA /* Swinject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-umbrella.h"; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBAEBC9C1B7093FBC9AEC10C219324CC /* Foundation.framework in Frameworks */,
+				D0F87D3880BF0DC1593D2AEED3B723B3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C501C2263C3718C533D283617B10214D /* Foundation.framework in Frameworks */,
+				B503A63E0009ED51E48A64D4012C463A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				419CED76DB2F846CFFB8E55111D03678 /* Foundation.framework in Frameworks */,
+				1E384413A9C40149058CDED859669729 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54FFC25B181AC97E59D6E09B790B84C6 /* Foundation.framework in Frameworks */,
+				841D47E30C1DD42FAF56C9A294D7424B /* Foundation.framework in Frameworks */,
 				92006C39FC00A7EC86FA2ECB678B3083 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0017E6FEA6D898D7A687DD158B6DA7F /* Foundation.framework in Frameworks */,
+				C2B4002E7151D35299B8968340BB4F7B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,14 +376,6 @@
 			path = "Target Support Files/Pods-RouterUITests";
 			sourceTree = "<group>";
 		};
-		BB3D880A8FE02A1E2C87DCC4D16EFF0A /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		C84543ABCCA73D1D6E44C4DCE273D6A9 /* Pods-Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,9 +398,17 @@
 			isa = PBXGroup;
 			children = (
 				33EED10ADEF7D02A32EF881228FB38A5 /* Swinject.framework */,
-				BB3D880A8FE02A1E2C87DCC4D16EFF0A /* iOS */,
+				EFBD686C5EF440E01FD56A4AD98836E0 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFBD686C5EF440E01FD56A4AD98836E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				710A274A907B275EB2859F9AC93D57B7 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		EFEE99741CF23666BE26223EF974AA34 /* Support Files */ = {
@@ -720,11 +720,7 @@
 				INFOPLIST_FILE = "Target Support Files/Swinject/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
 				PRODUCT_MODULE_NAME = Swinject;
 				PRODUCT_NAME = Swinject;
@@ -758,11 +754,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-RouterUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RouterUITests/Pods-RouterUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -797,11 +789,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-RouterTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RouterTests/Pods-RouterTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -834,11 +822,7 @@
 				INFOPLIST_FILE = "Target Support Files/Swinject/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
 				PRODUCT_MODULE_NAME = Swinject;
 				PRODUCT_NAME = Swinject;
@@ -870,11 +854,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwinjectStoryboard/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwinjectStoryboard/SwinjectStoryboard.modulemap";
 				PRODUCT_MODULE_NAME = SwinjectStoryboard;
 				PRODUCT_NAME = SwinjectStoryboard;
@@ -1028,11 +1008,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-RouterTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RouterTests/Pods-RouterTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1067,11 +1043,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-RouterUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RouterUITests/Pods-RouterUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1105,11 +1077,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Router/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Router/Pods-Router.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1145,11 +1113,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Router/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Router/Pods-Router.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1184,11 +1148,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwinjectStoryboard/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwinjectStoryboard/SwinjectStoryboard.modulemap";
 				PRODUCT_MODULE_NAME = SwinjectStoryboard;
 				PRODUCT_NAME = SwinjectStoryboard;
