@@ -13,8 +13,17 @@ final class FisrtModuleAssembly: Assembly {
     
     //Module assembly
     func assemble(container: Container) {
-       
+
+        container.register(FirstPresenter.self) { (r, viewController: FirstViewController) in
+            let presenter = FirstPresenter()
+            presenter.view = viewController
+            presenter.router = r.resolve(Router.self)
+
+            return presenter
+        }
+
         container.storyboardInitCompleted(FirstViewController.self) { r, viewController in
+            viewController.output = r.resolve(FirstPresenter.self, argument: viewController)
            //   viewController.router = r.resolve(Router.self)
         }
     }

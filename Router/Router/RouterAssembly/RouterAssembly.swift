@@ -9,10 +9,10 @@
 import Foundation
 import Swinject
 
-//class RouterAssembly: Assembly {
-//    func assemble(container: Container) {
-//        container.register(Router.self) { _ in
-//            return RouterImpl(window: ((UIApplication.shared.delegate?.window)!)!)
-//        }
-//    }
-//}
+class RouterAssembly: Assembly {
+    func assemble(container: Container) {
+        container.register(Router.self) { _ in
+            return RouterImpl(window: ((UIApplication.shared.delegate?.window)!)!)
+        }.inObjectScope(.container)
+    }
+}

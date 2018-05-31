@@ -8,23 +8,23 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, FirstViewInput {
 
     @IBOutlet var inputTextField: UITextField!
 
-    var router: Router!
+    var output: FirstViewOutput!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        router = RouterImpl(vc: self)
+        output.viewIsReady()
     }
 
     @IBAction func push(_ sender: Any) {
-        router.transition(to: SecondScenePush(with: inputTextField.text!))
+        output.push(inputTextField.text!)
     }
 
     @IBAction func modal(_ sender: Any) {
-        router.transition(to: SecondSceneModal(with: inputTextField.text!))
+        output.modal(inputTextField.text!)
     }
 }
 

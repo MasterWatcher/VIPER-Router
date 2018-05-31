@@ -15,10 +15,17 @@ protocol Scene {
     var storyboard: String {get}
     var identifier: String {get}
     var transitionType: TransitionType {get}
+    var wrapInNavigationController: Bool {get}
 }
 
 enum TransitionType {
     case root
     case push
     case modal
+}
+
+extension Scene {
+    var wrapInNavigationController: Bool {
+        return false
+    }
 }

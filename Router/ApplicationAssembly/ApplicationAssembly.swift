@@ -14,7 +14,7 @@ final class ApplicationAssembly {
     //Use default dependency
     class var assembler: Assembler {
         return Assembler([
-         //   RouterAssembly(),
+            RouterAssembly(),
             FisrtModuleAssembly(),
             SecondModuleAssembly()
             ])
