@@ -3,7 +3,8 @@
 ### TODO:
 
 - [X] VIPER support
-- [ ] DI support (Module Assembly and Transition Inject)
+- [X] DI Module Assembly
+- [ ] DI Transition Inject
 - [ ] Close Module
 - [ ] Root transition type
 - [ ] Segue support
