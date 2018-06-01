@@ -11,11 +11,16 @@ import Foundation
 class SecondPresenter: SecondViewOutput {
     
     weak var view: SecondViewInput!
+    var router: Router!
 
     var value: String!
 
     func viewIsReady() {
         view.show(value: value)
+    }
+
+    func closeTapped() {
+        router.close(animated: true)
     }
 }
 

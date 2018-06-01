@@ -15,4 +15,5 @@ protocol FirstViewOutput: class  {
     func viewIsReady()
     func push(_: String)
     func modal(_: String)
+    func root(_: String)
 }

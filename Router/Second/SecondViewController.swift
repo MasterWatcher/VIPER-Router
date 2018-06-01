@@ -24,7 +24,7 @@ class SecondViewController: UIViewController, SecondViewInput {
         outputLabel.text = value
     }
     @IBAction func close(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        output.closeTapped()
     }
 
 }

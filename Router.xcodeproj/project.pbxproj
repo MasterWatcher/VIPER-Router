@@ -23,6 +23,7 @@
 		3A37FFFB20B9BAD70076128E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FFFA20B9BAD70076128E /* Router.swift */; };
 		3A37FFFE20B9BBE90076128E /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FFFD20B9BBE90076128E /* ApplicationAssembly.swift */; };
 		85E0F96988F0341758E1AF1E /* Pods_Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC6C8154A868A24E61280DE /* Pods_Router.framework */; };
+		A314C71220C165000074A41C /* SecondSceneRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A314C71120C165000074A41C /* SecondSceneRoot.swift */; };
 		A316AD6C20C00DAF00BE862C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FFF820B9BA4D0076128E /* SecondViewController.swift */; };
 		A316AD7020C014A900BE862C /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316AD6E20C014A900BE862C /* Scene.swift */; };
 		A316AD7120C014A900BE862C /* SecondScenePush.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316AD6F20C014A900BE862C /* SecondScenePush.swift */; };
@@ -83,6 +84,7 @@
 		5C7B39CC6C972DB65FBBC3CF /* Pods-Router.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Router.release.xcconfig"; path = "Pods/Target Support Files/Pods-Router/Pods-Router.release.xcconfig"; sourceTree = "<group>"; };
 		7247AE5C9B5B11F3284B3C6E /* Pods-RouterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouterUITests/Pods-RouterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8EDF0BEF23ED10E9B3D42FE2 /* Pods-RouterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouterTests/Pods-RouterTests.release.xcconfig"; sourceTree = "<group>"; };
+		A314C71120C165000074A41C /* SecondSceneRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneRoot.swift; sourceTree = "<group>"; };
 		A316AD6E20C014A900BE862C /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		A316AD6F20C014A900BE862C /* SecondScenePush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScenePush.swift; sourceTree = "<group>"; };
 		A316AD7220C0154400BE862C /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				A316AD6E20C014A900BE862C /* Scene.swift */,
 				A316AD6F20C014A900BE862C /* SecondScenePush.swift */,
 				A316AD7720C0252F00BE862C /* SecondSceneModal.swift */,
+				A314C71120C165000074A41C /* SecondSceneRoot.swift */,
 				A316AD8320C03C2900BE862C /* FirstScene.swift */,
 			);
 			path = Scene;
@@ -486,6 +489,7 @@
 				A316AD7120C014A900BE862C /* SecondScenePush.swift in Sources */,
 				3A37000420B9BEDE0076128E /* SecondPresenter.swift in Sources */,
 				A316AD7820C0252F00BE862C /* SecondSceneModal.swift in Sources */,
+				A314C71220C165000074A41C /* SecondSceneRoot.swift in Sources */,
 				3A37FFCD20B9B5300076128E /* FirstViewController.swift in Sources */,
 				A316AD8820C03CED00BE862C /* FirstViewIO.swift in Sources */,
 				3A37000220B9BC3A0076128E /* SecondModuleAssembly.swift in Sources */,

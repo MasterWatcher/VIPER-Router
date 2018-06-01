@@ -26,5 +26,9 @@ class FirstViewController: UIViewController, FirstViewInput {
     @IBAction func modal(_ sender: Any) {
         output.modal(inputTextField.text!)
     }
+
+    @IBAction func root(_ sender: Any) {
+        output.root(inputTextField.text!)
+    }
 }
 

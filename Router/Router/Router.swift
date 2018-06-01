@@ -10,6 +10,7 @@ import UIKit
 
 protocol Router {
     func transition<T:Scene>(to: T)
+    func close(animated: Bool)
 }
 
 class RouterImpl: Router {
@@ -28,25 +29,45 @@ class RouterImpl: Router {
         if let moduleInput = viewController.moduleInput as? T.Module {
             moduleInput.configure(with: scene.param)
         }
-        var wrappedViewController: UIViewController
-        if scene.wrapInNavigationController {
-            let navigationController = UINavigationController()
-            navigationController.viewControllers = [viewController]
-            wrappedViewController = navigationController
-        } else {
-            wrappedViewController = viewController
-        }
+        let wrappedViewController = scene.wrapInNavigationController ? wrap(viewController) : viewController
 
         switch scene.transitionType {
         case .root:
-            currentViewController = viewController
             window.rootViewController = wrappedViewController
-            return
         case .push:
             guard let navigationController = currentViewController?.navigationController else { return }
             navigationController.pushViewController(wrappedViewController, animated: true)
         case .modal:
             currentViewController?.present(wrappedViewController, animated: true, completion: nil)
+        }
+
+        currentViewController = viewController
+    }
+
+    func close(animated: Bool) {
+        if let presentingViewController = currentViewController?.presentingViewController {
+            currentViewController?.dismiss(animated: animated, completion: nil)
+            //unwrap because of https://stackoverflow.com/questions/41114042/viewcontrollers-presentingviewcontroller-being-set-wrong
+            currentViewController = unwrap(presentingViewController)
+
+        } else if let navigationController = currentViewController?.navigationController,
+            navigationController.viewControllers.count > 1 {
+            navigationController.popViewController(animated: animated)
+            currentViewController = navigationController.viewControllers.last
+        }
+    }
+
+    private func wrap(_ viewController: UIViewController) -> UIViewController {
+        let navigationController = UINavigationController()
+        navigationController.viewControllers = [viewController]
+        return navigationController
+    }
+
+    private func unwrap(_ viewController: UIViewController) -> UIViewController? {
+        if let navigationController = viewController as? UINavigationController {
+            return navigationController.viewControllers.first
+        } else {
+            return viewController
         }
     }
 }

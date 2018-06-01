@@ -24,7 +24,6 @@ final class FisrtModuleAssembly: Assembly {
 
         container.storyboardInitCompleted(FirstViewController.self) { r, viewController in
             viewController.output = r.resolve(FirstPresenter.self, argument: viewController)
-           //   viewController.router = r.resolve(Router.self)
         }
     }
     

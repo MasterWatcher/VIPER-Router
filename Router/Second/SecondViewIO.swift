@@ -14,4 +14,5 @@ protocol SecondViewInput: class  {
 
     protocol SecondViewOutput: class  {
     func viewIsReady()
+    func closeTapped()
 }

@@ -17,6 +17,7 @@ final class SecondModuleAssembly: Assembly {
         container.register(SecondPresenter.self) { (r, viewController: SecondViewController) in
             let presenter = SecondPresenter()
             presenter.view = viewController
+            presenter.router = r.resolve(Router.self)
             
             return presenter
         }

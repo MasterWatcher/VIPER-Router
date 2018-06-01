@@ -25,6 +25,9 @@ class FirstPresenter: FirstViewOutput {
         router.transition(to: SecondSceneModal(with: value))
     }
 
+    func root(_ value: String) {
+        router.transition(to: SecondSceneRoot(with: value))
+    }
 }
 
 extension FirstPresenter: ModuleInput {
